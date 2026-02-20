@@ -1,3 +1,18 @@
+//You are a programmer for the ABC Bank assigned to develop a class that models the basic
+//workings of a bank account. The class should perform the following tasks:
+//o Save the account balance.
+//o Save the number of transactions performed on the account.
+//o Allow deposits to be made to the account.
+//o Allow with drawls to be taken from the account.
+//o Report the current account balance at any time.
+//o Report the current number of transactions at any time.
+//Menu
+//1. Display the account balance
+//2. Display the number of transactions
+//3. Display interest earned for this period
+//4. Make a deposit
+//5. Make a withdrawal
+//6. Exit the program
 #include <iostream>
 using namespace std;
 
