@@ -1,0 +1,68 @@
+#include <iostream>
+using namespace std;
+
+class Bank{
+	private:
+		float balance;
+		int transaction;
+	public:
+		Bank(){
+			balance = 0;
+			transaction  = 0;
+		}
+		void deposit(float amount){
+			if (amount > 0){
+			
+				balance += amount;
+				transaction++;
+			}else	
+				cout << "Invalid Number" << endl;
+		}
+		void withdraw(float amt){
+			if(amt <= balance){
+				balance =- amt;
+				transaction++;
+			}
+			else{
+				cout << "Insufficient Balance" << endl;
+			}
+				
+		}
+		void displaybalandtrans(){
+			cout << "Total Balance Is: "<< balance << "\nTotal Transactions: " << transaction << endl; 	
+		}
+};
+
+int main(void){
+	Bank acc;
+	float amount;
+	int choice;
+	do{
+		cout << "Display Total Balance And Number Of Transactions" << endl;
+		cout << "Make a deposit"<< endl;
+		cout << "Withdraw Money" << endl;
+		cout << "Exit" << endl;
+		cin >> choice;
+		switch(choice){
+			case 1:
+				acc.displaybalandtrans();
+				break;
+			case 2:
+				cout << "Enter an Amount";
+				cin >> amount;
+				acc.deposit(amount);
+				break;
+			case 3:
+				cout << "Enter an Amount";
+				cin >> amount;
+				acc.withdraw(amount);
+				break;
+				
+				
+		}
+	
+	}while (choice != 4);
+	
+
+  return 0;
+}
