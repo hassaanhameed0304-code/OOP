@@ -1,0 +1,10 @@
+Differences Between Multiple Inheritance and Multilevel Inheritance
+
+------------Multiple Inheritance------------------------------------------Mulitlevel Inheritance-------------------------
+
+Definition	•	A derived class inherits from more than one base class.	•	A derived class inherits from another derived class.
+Number of Base Classes	•	Two or more base classes for one derived class.	•	One base class, then another derived class inherits from it, and so on.
+Class Hierarchy Shape	•	Diamond or multiple parents to one child.	•	Linear hierarchy (a chain of inheritance).
+Example Use Case	•	Combining features from different classes.	•	Extending functionality step-by-step.
+Complexity	•	Can cause ambiguity if base classes have same method names (requires resolution).	•	Simpler and straightforward.
+
